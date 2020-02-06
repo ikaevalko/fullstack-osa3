@@ -26,8 +26,8 @@ if (process.argv.length > 3) {
   })
 
   person.save().then(result => {
-    console.log(`added ${result.name} number ${result.number} to phonebook`);
-    mongoose.connection.close();
+    console.log(`added ${result.name} number ${result.number} to phonebook`)
+    mongoose.connection.close()
   })
 } else {
   Person.find({}).then(result => {
